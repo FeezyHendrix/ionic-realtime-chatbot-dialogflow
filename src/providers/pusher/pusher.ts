@@ -9,7 +9,7 @@ export class PusherProvider {
   public _pusher : any;
 
   constructor(public http: HttpClient) {
-    this._pusher = new Pusher('a18c3dadaaf9cb21e5f9', {
+    this._pusher = new Pusher('APP_KEY', {
       cluster: 'eu',
       encrypted: true
     });
