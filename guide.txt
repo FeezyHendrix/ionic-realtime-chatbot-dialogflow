@@ -1,0 +1,13 @@
+ionic Start chatbot blank
+
+installing dependencies
+    adding pusher to index.html
+
+create two providers for sending chatmessage and pusher providers
+
+create addition chatpage
+
+build display name UI
+    chatpage html 
+    chatpage css
+    add chatpage to app.module.ts and httpClientModule

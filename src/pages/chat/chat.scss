@@ -1,0 +1,109 @@
+page-chat {
+    .flex-items{
+        display:  flex;
+        background-color: #fff;
+    }
+    .icon{
+        font-size: 50px;
+        opacity: 0.5;
+        padding-left: 40px;
+        align-self: center;
+    }
+    .send{
+        color: #603CD7;
+        font-size: 30px;
+    }
+    .input_message{
+        border: 1px solid #603CD7;
+        border-radius: 15px; 
+    }
+    .messages{
+        height: 100%;
+        position: relative;
+    }
+    .footer{
+        position: fixed;
+        bottom: 5%;
+    }
+    .chats {
+        height: 100%;
+        position: relative;
+        z-index: 0;
+
+    }
+
+    .chats .chatbox {
+        height: calc(100% - 80px);
+        overflow-x: hidden;
+        padding: 0 16px;
+        padding-bottom: 30px;
+    }
+
+    .joined {
+      clear: both;
+      line-height: 18px;
+      font-size: 15px;
+      margin: 8px 0;
+      padding: 8px;
+    }
+    .joined span {
+      padding: 5px
+    }
+
+    /* Messages*/
+
+    .message {
+      color: #000;
+      clear: both;
+      line-height: 18px;
+      font-size: 15px;
+      padding: 8px;
+      position: relative;
+      margin: 8px 0;
+      max-width: 85%;
+      word-wrap: break-word;
+      z-index: -1;
+    }
+
+    .message:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .message:first-child {
+      margin: 16px 0 8px;
+    }
+
+    .message.received {
+      background: #ccc;
+      border-radius: 0px 5px 5px 5px;
+      float: left;
+    }
+
+
+    .message.received:after {
+      border-width: 0px 10px 10px 0;
+      border-color: transparent #ccc transparent transparent;
+      top: 0;
+      left: -10px;
+    }
+
+    .message.sent {
+      background: #e1ffc7;
+      border-radius: 5px 0px 5px 5px;
+      float: right;
+    }
+
+    .message.sent:after {
+      border-width: 0px 0 10px 10px;
+      border-color: transparent transparent transparent #e1ffc7;
+      top: 0;
+      right: -10px;
+    }
+    .scroll-content{
+      padding: 0 !important;
+    }
+}
