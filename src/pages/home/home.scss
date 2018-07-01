@@ -1,5 +1,4 @@
-page-chat {
-    .flex-items{
+.flex-items{
         display:  flex;
         background-color: #fff;
     }
@@ -15,7 +14,7 @@ page-chat {
     }
     .input_message{
         border: 1px solid #603CD7;
-        border-radius: 15px; 
+        border-radius: 15px;
     }
     .messages{
         height: 100%;
@@ -29,16 +28,13 @@ page-chat {
         height: 100%;
         position: relative;
         z-index: 0;
-
     }
-
     .chats .chatbox {
         height: calc(100% - 80px);
         overflow-x: hidden;
         padding: 0 16px;
         padding-bottom: 30px;
     }
-
     .joined {
       clear: both;
       line-height: 18px;
@@ -49,9 +45,7 @@ page-chat {
     .joined span {
       padding: 5px
     }
-
     /* Messages*/
-
     .message {
       color: #000;
       clear: both;
@@ -64,7 +58,6 @@ page-chat {
       word-wrap: break-word;
       z-index: -1;
     }
-
     .message:after {
       position: absolute;
       content: "";
@@ -72,17 +65,14 @@ page-chat {
       height: 0;
       border-style: solid;
     }
-
     .message:first-child {
       margin: 16px 0 8px;
     }
-
     .message.received {
       background: #ccc;
       border-radius: 0px 5px 5px 5px;
       float: left;
     }
-
 
     .message.received:after {
       border-width: 0px 10px 10px 0;
@@ -90,13 +80,11 @@ page-chat {
       top: 0;
       left: -10px;
     }
-
     .message.sent {
       background: #e1ffc7;
       border-radius: 5px 0px 5px 5px;
       float: right;
     }
-
     .message.sent:after {
       border-width: 0px 0 10px 10px;
       border-color: transparent transparent transparent #e1ffc7;
@@ -106,4 +94,3 @@ page-chat {
     .scroll-content{
       padding: 0 !important;
     }
-}

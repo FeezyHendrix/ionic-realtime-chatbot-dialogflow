@@ -9,12 +9,13 @@ import { ChatProvider } from '../providers/chat/chat';
 import { PusherProvider } from '../providers/pusher/pusher';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { HomePage } from '../pages/home/home';
 
 
 @NgModule({
   declarations: [
     MyApp,
+    HomePage
   ],
   imports: [
     BrowserModule,
