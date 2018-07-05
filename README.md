@@ -1,6 +1,7 @@
 # Ionic realtime chatbot with Pusher 
 
 Demostrating how to build a chatbot application using Pusher and Dialogflow
+Follow the tutorial on [pusher](https://pusher.com/tutorials/chatbot-ionic-dialogflow) 
 
 ## Getting Started
 
